@@ -1,0 +1,50 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.edit-panel {
+  overflow: auto;
+}
+
+.edit-add {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.drag-wrapper:hover {
+    cursor: -webkit-grab;
+}
+
+.remove {
+  margin-left: @component-padding;
+}
+
+.remove:hover, .edit-add:hover, .drag-wrapper:hover {
+  color: @text-color-selected
+}
+
+.block {
+  margin-bottom: 0px !important;
+  display: flex;
+  align-items: center;
+
+  > input[type="text"] {
+    width: auto;
+  }
+}
+
+.label {
+  flex-grow: 1;
+}
+
+.icon-input {
+  flex-grow: 2;
+}
+
+.command {
+  flex-grow: 4;
+}

@@ -1,0 +1,45 @@
+{
+  "_from": "https://www.atom.io/api/packages/touchbar/versions/0.14.2/tarball",
+  "_id": "touchbar@0.14.2",
+  "_inBundle": false,
+  "_integrity": "sha512-A1oU9qU4fa6CrVg/cMnLkHqZrPi3HK+pPatABKJYA7er5Vpd2a4NEZbU2jU4axL8wuGWoUebB52FDzT7ZCfawQ==",
+  "_location": "/touchbar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/touchbar/versions/0.14.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/touchbar/versions/0.14.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/touchbar/versions/0.14.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/touchbar/versions/0.14.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/touchbar/versions/0.14.2/tarball",
+  "_shasum": "347749a9064e878728dfae33594fad85f62cec5d",
+  "_spec": "https://www.atom.io/api/packages/touchbar/versions/0.14.2/tarball",
+  "_where": "/private/var/folders/wx/0djbxt2d0jj0yr5xyhszk9d40000gn/T/apm-install-dir-11915-2794-b1pxmy.m66a",
+  "bugs": {
+    "url": "https://github.com/felixerdy/touchbar/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "etch": "^0.12.4"
+  },
+  "deprecated": false,
+  "description": "Add touchbar elements to atom",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/felixerdy/touchbar#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/touchbar",
+  "name": "touchbar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixerdy/touchbar.git"
+  },
+  "version": "0.14.2"
+}

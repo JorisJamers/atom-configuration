@@ -1,0 +1,44 @@
+{
+  "_from": "https://www.atom.io/api/packages/tidy-tabs/versions/0.4.0/tarball",
+  "_id": "tidy-tabs@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-SIJzy7kP2PiKxnOhREkX3cRbHdzQtFb0ZUgdho0VHFyN4Byn6XbMbOX7aLnRCyt4l1uWX69/xreUi/4NfPZpGA==",
+  "_location": "/tidy-tabs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/tidy-tabs/versions/0.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/tidy-tabs/versions/0.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/tidy-tabs/versions/0.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/tidy-tabs/versions/0.4.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/tidy-tabs/versions/0.4.0/tarball",
+  "_shasum": "b049968058f1ca34327b938773d41cac61e54032",
+  "_spec": "https://www.atom.io/api/packages/tidy-tabs/versions/0.4.0/tarball",
+  "_where": "/private/var/folders/wx/0djbxt2d0jj0yr5xyhszk9d40000gn/T/apm-install-dir-1181027-8281-1altkl6.2mqyi",
+  "bugs": {
+    "url": "https://github.com/bradleyboy/tidy-tabs-atom/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "fs-plus": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "Keep your tab bar tidy by removing stale tabs.",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/bradleyboy/tidy-tabs-atom#readme",
+  "license": "MIT",
+  "main": "./lib/tidy-tabs",
+  "name": "tidy-tabs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradleyboy/tidy-tabs-atom.git"
+  },
+  "version": "0.4.0"
+}

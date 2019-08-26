@@ -1,0 +1,64 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "d44f9278-93c8-40ab-82b6-79fcb9af7e84"
+    markdown: {}
+    terraform: {}
+  "atom-material-ui":
+    colors:
+      abaseColor: "#ef5350"
+      accentColor: "#59fcff"
+      predefinedColor: "Red"
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
+    ui:
+      panelContrast: true
+  core:
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "spell-check"
+    ]
+    telemetryConsent: "limited"
+    titleBar: "custom"
+  editor:
+    fontFamily: "Ubuntu"
+    fontSize: 16
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "b197c604-3957-47a9-b567-2b5f5ab9323b"
+  fonts:
+    fontFamily: "Ubuntu Mono"
+  linter:
+    lintOnOpen: false
+  "linter-js-yaml":
+    customTags: [
+      "!Ref"
+      "!Join"
+      "!Sub"
+      "!GetAtt"
+      "!"
+    ]
+  "linter-ui-default":
+    panelHeight: 487
+    showPanel: true
+  "markdown-preview":
+    breakOnSingleNewline: true
+  minimap: {}
+  "no-title-bar": {}
+  "nord-atom-syntax":
+    accessibility: {}
+  "nord-atom-ui":
+    darkerFormFocusEffect: true
+  "one-dark-mini-ui": {}
+  "one-dark-ui": {}
+  "terminal-tab":
+    fontFamily: "Ubuntu mono"
+  "tidy-tabs":
+    runOnSave: true
+  touchbar:
+    buttons: "[{\"type\":\"button\",\"name\":\"Config 1524399902796\",\"label\":\"open\",\"color\":\"#7b8781\",\"elements\":[],\"icon\":\"\",\"iconColor\":\"default\",\"command\":\"application:open\"},{\"type\":\"button\",\"label\":\"add\",\"elements\":[{\"name\":\"emoji-scrubber\",\"type\":\"scrubber\",\"label\":\"😄\",\"items\":\"emojis\"}],\"command\":\"application:add-project-folder\",\"icon\":\"\",\"color\":\"#7b8781\"},{\"name\":\"spacer\",\"type\":\"button\",\"size\":\"small\",\"label\":\"\",\"command\":\"tree-view:toggle\",\"color\":\"#7b8781\",\"icon\":\"NSTouchBarSidebarTemplate\",\"iconColor\":\"white\"},{\"name\":\"toggle-github\",\"type\":\"button\",\"label\":\"Git\",\"color\":\"#7b8781\",\"command\":\"github:toggle-git-tab\",\"iconColor\":\"black\",\"icon\":\"\"},{\"name\":\"comment-button\",\"type\":\"button\",\"label\":\"//\",\"command\":\"editor:toggle-line-comments\",\"color\":\"#7b8781\",\"icon\":\"\",\"iconColor\":\"default\"},{\"name\":\"toggle-command-palette\",\"type\":\"button\",\"label\":\"🎨\",\"command\":\"command-palette:toggle\",\"iconColor\":\"white\",\"color\":\"#7b8781\"},{\"name\":\"color-picker\",\"type\":\"color-picker\",\"icon\":\"\",\"label\":\"\",\"color\":\"#7b8781\"},{\"name\":\"edit-touchbar\",\"type\":\"button\",\"label\":\"Settings\",\"command\":\"touchbar:edit\",\"color\":\"#000000\"}]"
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
