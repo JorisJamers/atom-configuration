@@ -1,25 +1,25 @@
 {
-  "_from": "https://www.atom.io/api/packages/hydrogen/versions/2.10.3/tarball",
-  "_id": "Hydrogen@2.10.3",
+  "_from": "https://www.atom.io/api/packages/hydrogen/versions/2.13.1/tarball",
+  "_id": "Hydrogen@2.13.1",
   "_inBundle": false,
-  "_integrity": "sha512-47kgCWKkGoudJPIWNnNrVYJHQwkW31BQBqlDFlzpkyjdY6JJjjN5MgRDZsDYnfkBzI3rsMVfG9T/kPvQuJfw4g==",
+  "_integrity": "sha512-zL30t6W+njAVRNafJ1Sy+iXa0mWL/zPUekylU1CQ/LvCggkP/apQkGvK4fuMpkk9TVHwRGTc+7kZYl8CK6mSvw==",
   "_location": "/Hydrogen",
   "_phantomChildren": {},
   "_requested": {
     "type": "remote",
-    "raw": "https://www.atom.io/api/packages/hydrogen/versions/2.10.3/tarball",
-    "rawSpec": "https://www.atom.io/api/packages/hydrogen/versions/2.10.3/tarball",
-    "saveSpec": "https://www.atom.io/api/packages/hydrogen/versions/2.10.3/tarball",
-    "fetchSpec": "https://www.atom.io/api/packages/hydrogen/versions/2.10.3/tarball"
+    "raw": "https://www.atom.io/api/packages/hydrogen/versions/2.13.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/hydrogen/versions/2.13.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/hydrogen/versions/2.13.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/hydrogen/versions/2.13.1/tarball"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://www.atom.io/api/packages/hydrogen/versions/2.10.3/tarball",
-  "_shasum": "05f3cc5e26c3ef7689641a06e616ead418de72b4",
-  "_spec": "https://www.atom.io/api/packages/hydrogen/versions/2.10.3/tarball",
-  "_where": "/private/var/folders/wx/0djbxt2d0jj0yr5xyhszk9d40000gn/T/apm-install-dir-11964-1306-141085z.d6b6",
+  "_resolved": "https://www.atom.io/api/packages/hydrogen/versions/2.13.1/tarball",
+  "_shasum": "58bbb496dc5515f5c87ad35dfe2eacc514b46a67",
+  "_spec": "https://www.atom.io/api/packages/hydrogen/versions/2.13.1/tarball",
+  "_where": "/private/var/folders/wx/0djbxt2d0jj0yr5xyhszk9d40000gn/T/apm-install-dir-119929-3837-18xyxzn.eug7",
   "activationCommands": {
     "atom-text-editor": [
       "hydrogen:start-local-kernel",
@@ -45,27 +45,27 @@
   },
   "bundleDependencies": false,
   "consumedServices": {
+    "autocomplete.watchEditor": {
+      "versions": {
+        "^1.0.0": "consumeAutocompleteWatchEditor"
+      }
+    },
     "status-bar": {
       "versions": {
         "^1.0.0": "consumeStatusBar"
-      }
-    },
-    "tree-view": {
-      "versions": {
-        "^1.0.0": "consumeTreeView"
       }
     }
   },
   "dependencies": {
     "@babel/runtime-corejs2": "^7.0.0",
     "@jupyterlab/services": "^0.52.0",
-    "@nteract/commutable": "^7.0.0",
+    "@nteract/commutable": "^7.1.4",
     "@nteract/markdown": "^4.0.0",
-    "@nteract/mathjax": "^4.0.0",
+    "@nteract/mathjax": "^4.0.1",
     "@nteract/outputs": "^2.1.5",
-    "@nteract/transform-plotly": "^5.0.0",
-    "@nteract/transform-vega": "^5.0.2",
-    "anser": "^1.4.4",
+    "@nteract/plotly": "^1.48.3",
+    "@nteract/transform-vega": "^6.0.0",
+    "anser": "^1.4.8",
     "atom-select-list": "^0.7.0",
     "escape-carriage": "^1.2.0",
     "escape-string-regexp": "^2.0.0",
@@ -74,9 +74,9 @@
     "lodash": "^4.14.0",
     "mathjax-electron": "^3.0.0",
     "mobx": "^5.1.1",
-    "mobx-react": "^5.0.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "mobx-react": "^6.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-rangeslider": "^2.1.0",
     "react-table": "^6.10.0",
     "spawnteract": "^5.1.0",
@@ -92,7 +92,7 @@
     "atom-jasmine3-test-runner": "^4.0.0",
     "enzyme": "^3.1.1",
     "enzyme-adapter-react-16": "^1.0.4",
-    "flow-bin": "^0.102.0",
+    "flow-bin": "^0.110.0",
     "husky": "^3.0.0",
     "lint-staged": "^9.0.0",
     "markdox": "^0.1.10",
@@ -135,7 +135,7 @@
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
-        "2.0.0": "provide"
+        "4.0.0": "provideAutocompleteResults"
       }
     },
     "hydrogen.provider": {
@@ -150,9 +150,11 @@
     "url": "git+https://github.com/nteract/hydrogen.git"
   },
   "scripts": {
-    "build:docs": "markdox lib/plugin-api/hydrogen-provider.js lib/plugin-api/hydrogen-kernel.js -o docs/PluginAPI.md",
+    "build:docs": "npm run build:plugin-docs && npm run build:services-docs",
+    "build:plugin-docs": "markdox lib/plugin-api/hydrogen-provider.js lib/plugin-api/hydrogen-kernel.js -o docs/PluginAPI.md",
+    "build:services-docs": "markdox lib/services/index.js -o lib/services/README.md",
     "flow": "flow",
     "prettier": "prettier --write \"lib/**/*.js\" \"spec/**/*.js\""
   },
-  "version": "2.10.3"
+  "version": "2.13.1"
 }

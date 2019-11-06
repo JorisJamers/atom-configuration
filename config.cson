@@ -41,7 +41,6 @@
     ]
   "linter-ui-default":
     panelHeight: 487
-    showPanel: true
   "markdown-preview":
     breakOnSingleNewline: true
   minimap: {}
@@ -58,7 +57,6 @@
     runOnSave: true
   touchbar:
     buttons: "[{\"type\":\"button\",\"name\":\"Config 1524399902796\",\"label\":\"open\",\"color\":\"#7b8781\",\"elements\":[],\"icon\":\"\",\"iconColor\":\"default\",\"command\":\"application:open\"},{\"type\":\"button\",\"label\":\"add\",\"elements\":[{\"name\":\"emoji-scrubber\",\"type\":\"scrubber\",\"label\":\"😄\",\"items\":\"emojis\"}],\"command\":\"application:add-project-folder\",\"icon\":\"\",\"color\":\"#7b8781\"},{\"name\":\"spacer\",\"type\":\"button\",\"size\":\"small\",\"label\":\"\",\"command\":\"tree-view:toggle\",\"color\":\"#7b8781\",\"icon\":\"NSTouchBarSidebarTemplate\",\"iconColor\":\"white\"},{\"name\":\"toggle-github\",\"type\":\"button\",\"label\":\"Git\",\"color\":\"#7b8781\",\"command\":\"github:toggle-git-tab\",\"iconColor\":\"black\",\"icon\":\"\"},{\"name\":\"comment-button\",\"type\":\"button\",\"label\":\"//\",\"command\":\"editor:toggle-line-comments\",\"color\":\"#7b8781\",\"icon\":\"\",\"iconColor\":\"default\"},{\"name\":\"toggle-command-palette\",\"type\":\"button\",\"label\":\"🎨\",\"command\":\"command-palette:toggle\",\"iconColor\":\"white\",\"color\":\"#7b8781\"},{\"name\":\"color-picker\",\"type\":\"color-picker\",\"icon\":\"\",\"label\":\"\",\"color\":\"#7b8781\"},{\"name\":\"edit-touchbar\",\"type\":\"button\",\"label\":\"Settings\",\"command\":\"touchbar:edit\",\"color\":\"#000000\"}]"
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false

@@ -12,17 +12,28 @@ import {
   Media,
   RichMedia
 } from "@nteract/outputs";
-import PlotlyTransform from "@nteract/transform-plotly";
-import { VegaLite1, VegaLite2, Vega2, Vega3 } from "@nteract/transform-vega";
+import Plotly from "./plotly";
+import {
+  VegaLite1,
+  VegaLite2,
+  VegaLite3,
+  Vega2,
+  Vega3,
+  Vega4,
+  Vega5
+} from "@nteract/transform-vega";
 
 import Markdown from "./markdown";
 
 // All supported media types for output go here
 export const supportedMediaTypes = (
   <RichMedia>
+    <Vega5 />
+    <Vega4 />
     <Vega3 />
     <Vega2 />
-    <PlotlyTransform />
+    <Plotly />
+    <VegaLite3 />
     <VegaLite2 />
     <VegaLite1 />
     <Media.Json />
