@@ -21,6 +21,7 @@
     ]
     telemetryConsent: "limited"
     titleBar: "custom"
+    useTreeSitterParsers: false
   editor:
     fontFamily: "Ubuntu"
     fontSize: 16
@@ -29,6 +30,8 @@
     userId: "b197c604-3957-47a9-b567-2b5f5ab9323b"
   fonts:
     fontFamily: "Ubuntu Mono"
+  kite:
+    showWelcomeNotificationOnStartup: false
   linter:
     lintOnOpen: false
   "linter-js-yaml":
@@ -40,10 +43,13 @@
       "!"
     ]
   "linter-ui-default":
-    panelHeight: 487
+    panelHeight: 120
+    showPanel: true
   "markdown-preview":
     breakOnSingleNewline: true
   minimap: {}
+  "native-ui":
+    ui: {}
   "no-title-bar": {}
   "nord-atom-syntax":
     accessibility: {}
